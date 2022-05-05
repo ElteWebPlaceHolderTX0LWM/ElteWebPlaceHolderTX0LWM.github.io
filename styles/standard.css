@@ -1,0 +1,141 @@
+nav > a, button, .nav > a, nav > a:visited, .nav > a:visited {
+    background-color: rgb(200, 200, 200);
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto' , sans-serif;
+}
+
+button {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+nav > a.selected, .nav > a.selected {
+    border: 2px solid darkred;
+    color: darkred;
+    font-weight: bold;
+}
+
+img.logo {
+    width: 5%;
+    height: 5%;
+    margin: 1em;
+}
+
+header, .header {
+    display: inline-flex;
+    width: 100%;
+    max-height: 20%;
+    background-color: rgba(200, 200, 200, 0.9);
+    border-bottom: 2px solid black;
+    overflow: hidden;
+}
+
+
+nav, .nav {
+    margin: auto;
+}
+
+body {
+    margin: 0%;
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("../assets/dnd-hdmap.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+section, .format {
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    padding-top: 0em;
+    background-color: white;
+    border: 2px solid #620808;
+    border-radius: 25px;
+}
+
+h1 {
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 1em;
+    border: 2px solid #620808;
+    border-radius: 25px;
+    padding: 1%;
+    font-size: 1.5em;
+}
+
+.inline > .table-section {
+    min-width: 15%;
+    font-size: .8em;
+    padding-top: 1em;
+}
+
+.inline .format, .inline section {
+    float: left;
+    margin: 1em;
+    max-width: 10%;
+}
+
+.inline > .big-section {
+    max-width: 50%;
+}
+
+.inline > .bit-bigger-section {
+    max-width: 30%;
+}
+
+.inline > .med-section {
+    max-width: 19.5%;
+}
+
+.phb-image {
+    max-width: 100%;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.inline > .image-container {
+    padding-top: 1em;
+    float: right;
+    max-width: 20%;
+}
+
+.center {
+    text-align: center;
+    display: block;
+}
+
+.inline > .very-big-section {
+    max-width: 60%;
+}
+
+.inline > .footer-container {
+    max-width: 100%;
+}
+
+.inline > figure.left {
+    float: left;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+a:visited {
+    color: gray;
+}

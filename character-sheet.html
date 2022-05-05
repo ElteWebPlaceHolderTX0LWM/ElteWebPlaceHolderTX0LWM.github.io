@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Dungeons And Dragons - Karakterlap</title>
+        <link rel="icon" href="assets/logo.png"/>
+        <link rel="stylesheet" href="styles/standard.css"/>
+        <link rel="stylesheet" href="styles/print.css"/>
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+        <a href="#kezd" class="skip-link">Tovább a tartalomra</a>
+        <header>
+            <img src="assets/logo.png" class="logo" alt="Logo"/>
+            <nav>
+                <a href="index.html">Bevezető & Alapszabályok</a>
+                <a href="encounters.html">Encounterek</a>
+                <a class="selected" href="character-sheet.html">Karakterlap Kitöltése</a>
+                <a href="classes.html">Kasztok</a>
+            </nav>
+            <button type="button" onclick="clickity()">Kontrasztos Mód</button>
+            <button type="button" onclick="change_font()">Más Betűtípus</button>
+        </header>
+        <h1>A Karakterlap</h1>
+        <div class="inline">
+            <figure class="image-container format left">
+                <a href="./assets/dnd-chsheet.png" target="_blank">
+                <img src="./assets/small-chsheet.png" class="phb-image" alt="Kép egy karakterlapról">
+                </a><i class="center">Egy kitöltött karakterlap</i>
+            </figure>
+            <article class="big-section format" id="kezd">
+                <h2>Mi az a karakterlap?</h2>
+                <div>
+                <span lang="en">D&D</span>-ben a karakterlap definiálja egy játékos karakterének összes képességét, személyiségét, háttértörténetét és felszerelését. A karakterlap kitöltése nagyrészt tetszőleges sorrendben megtehető, de ajánlott először a fő statok (<b lang="en">Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma</b>) kitöltése, ugyanis a karakterlap nagyrészt ezekre alapul. Az alap kitöltési módszer úgy néz ki, hogy a játékos dob 4 db d6 kockával, és elhagyja a legkisebbet. Ha 8-nál kisebb az összeg, akkor lecseréli 8-ra. Ezt minden <span lang="en">statr</span> megismétli, és elosztja tetszőlegesen. Ez alapján ki lehet számolni a <b>modifier</b>eket (Módszer: (<span lang="en">Stat</span> - 10) / 2, lefele kerekítve), amelyek hozzáadódnak majd a megfelelő d20 dobásokhoz.</div>
+                <h2>Kezdő felszerelés</h2>
+                <div>
+                Második lépésként érdemes a felszerelést összegyűjteni (feltéve, hogy kasztot, fajt és háttért már választottunk). Felszerelést az előbb említett három forrásból lehet általában szerezni, ezért érdemes többször is átnézni, nehogy lehagyjunk valamit. Ezenfelül minden kasztnak jár valamilyen csomag, ami rengeteg hasznos tárgyat tartalmaz - kötél, gyertya, étel, csapda, fegyver stb.</div>
+            </article>
+            <aside class="format bit-bigger-section">
+                <h2>Karakterlap kitöltése montázs</h2>
+                <video width="320" height="240" poster="./assets/dnd-videopreview.png" controls>
+                    <source src="assets/dnd-video.mp4" type="video/mp4">
+                </video>
+                <br>
+                <i>A videóban egy karakterlap mezői vannak kitöltve a következő sorrendben: Név, Kaszt és Szint, Háttér, Faj, Moralitás, <span lang="en">Statok</span>, Védő dobások, Képesség, Páncél, Kezdeményezés, Sebesség, Életerő, Gyógyító kockák, Fegyverzet, Tárgykészlet, Tanulmányok.</i>
+            </aside>
+            <div class="footer-container format">
+                <footer>
+                    Elérhetőségek:<br>
+                    <a lang="en" href="https://twitter.com/Thrithralas" target="_blank">Tweeter</a><br>
+                    <a lang="en" href="https://steamcommunity.com/id/thrithralas/" target="_blank">Steam</a><br>
+                    <a href="https://github.com/Thrithralas" target="_blank">Kódok</a><br>
+                  </footer>
+                </div>
+        </div>
+    </body>
+</html>

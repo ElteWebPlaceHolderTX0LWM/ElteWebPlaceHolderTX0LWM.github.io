@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Dungeons And Dragons - Kasztok</title>
+        <link rel="icon" href="assets/logo.png"/>
+        <link rel="stylesheet" href="styles/standard.css"/>
+        <link rel="stylesheet" href="styles/print.css"/>
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+        <a href="#kezd" class="skip-link">Tovább a tartalomra</a>
+        <header>
+            <img src="assets/logo.png" class="logo" alt="Logo"/>
+            <nav>
+                <a href="index.html">Bevezető & Alapszabályok</a>
+                <a href="encounters.html">Encounterek</a>
+                <a href="character-sheet.html">Karakterlap Kitöltése</a>
+                <a class="selected" href="classes.html">Kasztok</a>
+            </nav>
+            <button type="button" onclick="clickity()">Kontrasztos Mód</button>
+            <button type="button" onclick="change_font()">Más Betűtípus</button>
+        </header>
+        <h1>Kasztok & Alkasztok</h1>
+        <div class="inline">
+            <div class="table-section format">
+                <table>
+                    <caption>Statok Táblázata<details><summary>Összefoglaló</summary>Táblázat amely egy kaszt szükséges statjait tartja. Érdemes ezekre optimalizálni.</details></caption>
+                    <tr>
+                        <th>Kaszt</th>
+                        <th>Elsődleges Stat</th>
+                      </tr>
+                      <tr>
+                        <td lang="en">Fighter</td>
+                        <td lang="en">Strength</td>
+                      </tr>
+                      <tr>
+                        <td lang="en">Barbarian</td>
+                        <td lang="en">Strength</td>
+                      </tr>
+                      <tr>
+                        <td lang="en">Wizard</td>
+                        <td lang="en">Intelligence</td>
+                      </tr>
+                      <tr>
+                        <td lang="en">Rogue</td>
+                        <td lang="en">Dexterity</td>
+                      </tr>
+                      <tr>
+                        <td lang="en">Paladin</td>
+                        <td lang="en">Charisma/Strength</td>
+                      </tr>
+                      <tr>
+                        <td lang="en">Cleric</td>
+                        <td lang="en">Charisma</td>
+                      </tr>
+                      <tr>
+                        <td lang="en">Bard</td>
+                        <td lang="en">Charisma</td>
+                      </tr>
+                      <tr>
+                        <td lang="en">Warlock</td>
+                        <td lang="en">Charisma</td>
+                      </tr>
+                      <tr>
+                        <td lang="en">Artificer</td>
+                        <td lang="en">Intelligence</td>
+                      </tr>
+                      <tr>
+                        <td lang="en">Monk</td>
+                        <td lang="en">Dexterity</td>
+                      </tr>
+                      <tr>
+                        <td lang="en">Druid</td>
+                        <td lang="en">Wisdom</td>
+                      </tr>
+                      <tr>
+                        <td lang="en">Ranger</td>
+                        <td lang="en">Dexterity/Wisdom</td>
+                      </tr>
+                </table>
+              </div>
+            <div class="big-section format">
+                <article id="kezd">
+                    <h2>Röviden a karakterkészítésről</h2>
+                    <div>
+                      <span lang="en">D&D</span>-ben a legfontosabb döntés a karakterkészítés folyamán a kaszt - és esetenként alkaszt - választása. A kaszt dönti el, hogy közel- vagy távolharcos leszel-e, vannak-e varázslataid, mennyi az életerőd, milyen fegyvereket tudsz használni, és melyik <span lang="en">stat</span> kell előtérbe helyezni. A bal oldalon lévő táblázat leírja melyik <span lang="en">stat</span> a <b lang="en">Priority Stat</b> (magyarul elsődleges stat) egy kasztnak. <span lang="en">Paladin</span> esetén ez komplikált, mert az egy hibrid kaszt, ami mindkettőt tudja, ezért a játékosnak kell eldöntenie, melyiket helyezi előnybe.
+                    </div>
+                    <div>
+                        Az alkasztok minden kasztnál más formában és más szinten jelennek meg. <span lang="en">Cleric</span>él ez az úgynevezett "<span lang="en">Holy Domain</span>"-ként jelenik meg, ami lényegében azt jelképezi, milyen istenséget követnek. Ők ezt már karakterkészítésnél eldönthetik. Egyes kasztoknál fontosabb az alkaszt mint másoknál, például a Fighterek, ha az <span lang="en">Eldritch Knight</span> alkasztot választják, akkor képesek varázslatokra, egyébként viszont nem.
+                    </div>
+                </article>
+              </div>
+            <figure class="image-container format">
+              <a href="./assets/dnd-phbimage.png" target="_blank">
+                <img src="./assets/small-phbimage.png" class="phb-image" alt="Az 'Artificer' karakterről kép az egyik könyvből">
+                </a>
+                <i class="center">Az '<span lang="en">Artificer</span>' karakterről kép az egyik könyvből</i>
+            </figure>
+            <section class="big-section hide">
+                <h2>Kisegítési Űrlap</h2>
+                <form action="mailto:tx0lwm@inf.elte.hu" method="post" enctype="multipart/form-data">
+                    <label for="name">Név:</label><br>
+                    <input type="text" id="name" maxlength="15" size="15" name="name"><br>
+                    <label for="email">Ímél:</label><br> <!-- LMAO ÍMÉL -->
+                    <input type="email" id="email" maxlength="25" size="25" name="email"><br>
+                    <label for="msg">Üzenet:</label><br>
+                    <textarea id="msg" maxlength="50" cols="20" rows="4" name="msg"></textarea><br>
+                    Szereped:<br>
+                    <input type="radio" name="type" value="fighter" id="type1"><label for="type1">Közelharcos</label><br>
+                    <input type="radio" name="type" value="ranged" id="type2"><label for="type2">Távolharcos</label><br>
+                    <input type="radio" name="type" value="mage" id="type3"><label for="type3">Mágus</label><br>
+                    <input type="radio" name="type" value="support" id="type4"><label for="type4">Segítő</label><br>
+                    <input type="checkbox" id="helpchoose" name="helpchoose"><label for="helpchoose">Segíts fajt is választani!</label><br>
+                    <input type="submit" value="Küldés"><input type="reset" value="Törlés">
+                  </form>
+            </section>
+            <div class="footer-container format">
+              <footer>
+                  Elérhetőségek:<br>
+                  <a lang="en" href="https://twitter.com/Thrithralas" target="_blank">Tweeter</a><br>
+                  <a lang="en" href="https://steamcommunity.com/id/thrithralas/" target="_blank">Steam</a><br>
+                  <a href="https://github.com/Thrithralas" target="_blank">Kódok</a><br>
+                </footer>
+              </div>
+        </div>
+    </body>
+</html>

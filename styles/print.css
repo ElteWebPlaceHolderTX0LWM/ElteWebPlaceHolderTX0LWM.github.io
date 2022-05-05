@@ -1,0 +1,23 @@
+@media print {
+
+    header, nav, footer, video, .footer-container, aside, form, .hide, .header {
+        display: none;
+    }
+    body {
+        background-image: none;
+        font-size: .5em;
+    }
+
+    section, .format, h1 {
+        border: 0px;
+    }
+
+    .inline {
+        display: block;
+    }
+
+    img {
+        max-width: 30%;
+        filter: grayscale(100%)
+    }
+}
